@@ -1,7 +1,10 @@
 package practicos;
 
-public class calculadora {
-	
+
+
+
+public class Calculadora {
+
 	public static Integer sumar (Integer num1,Integer num2) {
 		return num1+num2;
 	}
@@ -15,7 +18,12 @@ public class calculadora {
 	}
 	
 	public static Integer dividir (Integer num1,Integer num2) {
-		return num1/num2;
+		if (num2 ==0) {
+			return 0;
+		}
+		else {
+			return num1/num2;
+		}
 	}
 	public static Integer calcular (String cadena,Integer num1,Integer num2) {
 		Integer resultado = 0;
